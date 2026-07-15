@@ -24,7 +24,9 @@ colored2-grid {
 
 } 
 body {
-    font-size: 0;
+	body > y {
+    display: none;
+    font-size: 0; }
 }
 
 body > * {
