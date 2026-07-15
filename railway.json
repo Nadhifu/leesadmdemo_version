@@ -1,0 +1,37 @@
+{
+  "$schema": "https://railway.app/railway.schema.json",
+  "build": {
+    "builder": "RAILPACK",
+    "buildCommand": "mvn clean compile vaadin:prepare-frontend vaadin:build-frontend package -Pproduction -DskipTests -Dvaadin.productionMode=true"
+  },
+  "deploy": {
+    "startCommand": "java -Xmx512m -Dserver.port=$PORT -jar target/*.jar",
+    "healthCheckPath": "/health",
+    "healthCheckTimeout": 30
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
