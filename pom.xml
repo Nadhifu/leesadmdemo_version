@@ -262,6 +262,7 @@
                 <dependency>
                     <groupId>com.vaadin</groupId>
                     <artifactId>vaadin-core</artifactId>
+                    <version>${vaadin.version}</version>
                     <exclusions>
                         <exclusion>
                             <groupId>com.vaadin</groupId>
@@ -304,6 +305,7 @@
                                     <goal>start</goal>
                                 </goals>
                             </execution>
+
                             <execution>
                                 <id>stop-spring-boot</id>
                                 <phase>post-integration-test</phase>
