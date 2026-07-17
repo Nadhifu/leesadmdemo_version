@@ -41,32 +41,27 @@ public class MembersLogin  extends VerticalLayout {
 	        	        
 	                      var pwvalue = pwField.getValue();
 
-                         if (pwvalue.length() > 0) {
-                            if (pwvalue.equals("mylife") ||
-                                pwvalue.equals("urlife") ||
-                                   pwvalue.equals("thelife"))    
-							         System.out.println("Login Id = " + pwvalue);
-                                     UI.getCurrent().navigate(GridtobeView.class);
-						     }
-                            else
-                            {
-                               System.out.println("Not Authorized User");   
-	         		           Notification notification = Notification.show("Not Authorized User");
-	         		           notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
-                            }
-				
-					//		{
-                    //        }
-                        });
+                    if (pwvalue != null && pwvalue.length() > 0) {
+                          if (pwvalue.equals("mylife") || pwvalue.equals("urlife") || pwvalue.equals("thelife")) {
+                             UI.getCurrent().navigate(GridtobeView.class);
+                          } else {
+                                 Notification notification = Notification.show("Not Authorized User");
+                                 notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
+                                }
+               } else
+			      	 {
+                         Notification notification = Notification.show("Please enter a password");
+                         notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
+                     }
+              });
+ 
                      
                         
         	               confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
                         setAlignItems(FlexComponent.Alignment.CENTER);
 
                         add(header, pwField, confirmedButton);
-                    } ;         
-            };
-        
-      
+                            
+            }}
 
 
