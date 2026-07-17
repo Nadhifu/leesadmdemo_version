@@ -48,11 +48,11 @@ public class MembersLogin  extends VerticalLayout {
                                  Notification notification = Notification.show("Not Authorized User");
                                  notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
                                 }
-               } else
-			      	 {
+                    } else
+			        	 {
                          Notification notification = Notification.show("Please enter a password");
                          notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
-                     }
+                         }
               });
  
                      
