@@ -40,6 +40,7 @@ public class MembersLogin  extends VerticalLayout {
                         Button confirmedButton = new Button("Confirm", e -> {
 	        	        
 	                      var pwvalue = pwField.getValue();
+							 System.out.println("Password entered: " + pwvalue);
 
                     if (pwvalue != null && pwvalue.length() > 0) {
                           if (pwvalue.equals("mylife") || pwvalue.equals("urlife") || pwvalue.equals("thelife")) {
