@@ -1,1 +1,37 @@
-@Theme
+@theme
+html {
+
+   --lumo-primary-color: rgb(128, 64, 0);
+   --lumo-font-family: 'Arial'; 
+} 
+
+html {
+	background-color: color-mix(in oklab, #ff00132b 75%, #0000001f 25%);
+} 
+
+colored4b-grid {
+
+   --lumo-primary-color: rgba(110, 150, 0, 1);
+   --lumo-font-family: 'Verdana';
+   --lumo-base-color: #FFF
+
+}
+colored2-grid {
+
+   --lumo-primary-color: rgba(128, 0, 96, 1);
+   --lumo-font-family: 'Tahoma';
+   --lumo-base-color: #FFF
+
+} 
+body {
+ > y {
+    display: none;
+    font-size: 0;
+}}
+
+body > * {
+    font-size: var(--lumo-font-size-m, 1rem);
+}
+ 
+ 
+
