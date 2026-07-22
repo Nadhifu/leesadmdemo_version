@@ -37,7 +37,7 @@ public class MembersLogin  extends VerticalLayout {
              public MembersLogin() {
             //  System.out.println("In the MembersLogin constructor");
         
-                        header.getStyle().set("font-size", "70px");
+                        header.getStyle().set("font-size", "50px");
                         pwField.setLabel("-------------PASSWORD-------------");
                         pwField.setValue(""); 
                         pwField.getStyle().set("--vaadin-input-field-border-width", "3px");
