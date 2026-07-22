@@ -55,7 +55,7 @@ public class MemberPaymentForm extends VerticalLayout implements HasUrlParameter
 	TextField amountField = new TextField("Amount");
 	String idpassed;
 	LocalDate currentDate = LocalDate.now();
-	H1 header = new H1("Lee's Member Payment "); 
+	H1 header = new H1("Demo Member Payment "); 
 	FormLayout form = new FormLayout();
 //	Long idpassedL;
 
