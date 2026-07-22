@@ -1,9 +1,9 @@
 /* Add your styles here */
-/*tml {
+html {
 
-   --lumo-primary-color: rgb(128, 64, 0);
+   --lumo-primary-color: rgb(128, 64, 99);
    --lumo-font-family: 'Arial'; 
-} */
+} 
 
 html {
 	background-color: color-mix(in oklab, #cc29005b 50%, #0000001f 50%);
