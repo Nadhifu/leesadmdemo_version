@@ -6,7 +6,9 @@ import com.vaadin.flow.component.page.AppShellConfigurator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication 
+@SpringBootApplication  
+@StyleSheet(Lumo.STYLESHEET)
+@StyleSheet(Lumo.COMPACT_STYLESHEET)
 //@StyleSheet("styles.css")
 public class Application implements AppShellConfigurator {
 
