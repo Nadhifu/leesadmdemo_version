@@ -49,7 +49,7 @@ public class MemberIndividualReport extends VerticalLayout implements HasUrlPara
 	TextField lastNameField = new TextField( "Last Name");
 	TextField id = new TextField("id");
 	 String membersjoin;
-	 H1 header = new H1("Lee's Member Payment Reporting ");
+	 H1 header = new H1("Demo Member Payment Reporting ");
 	 HorizontalLayout across = new HorizontalLayout();
 
     private static final long serialVersionUID = 1L;
