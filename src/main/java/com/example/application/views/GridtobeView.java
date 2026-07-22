@@ -289,8 +289,10 @@ public class  GridtobeView extends VerticalLayout {
 	private void configureGrid() {	        
 	
 	    	grid.setAllRowsVisible(true);  // so a scroller doesn't appear on grid itself
+	 	   grid.addThemeVariants(GridVariant.LUMO_COLUMN_BORDERS);
+	        grid.addThemeVariants(GridVariant.LUMO_ROW_STRIPES);
 	    	 grid.addThemeVariants(GridVariant.LUMO_COMPACT);
-			 grid.addThemeVariants(GridVariant.LUMO_COLUMN_BORDERS);
+			
 
 	         //   grid.addClassName("small-font-grid");
 	        //    grid.addClassName("colored6-grid"); 
