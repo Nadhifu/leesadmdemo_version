@@ -44,7 +44,7 @@ public class MembersLogin  extends VerticalLayout {
                     //    add(header, pwField, confirmedButton);
 
                         Button confirmedButton = new Button("Confirm", e -> {
-							confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+							
 	        	        
 	                      var pwvalue = pwField.getValue();
 							 System.out.println("Password entered: " + pwvalue);
@@ -66,6 +66,7 @@ public class MembersLogin  extends VerticalLayout {
                      
                         
         	               confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
+			        	 confirmedButton.getStyle().set("background-color", "#f5f5f5");
                         setAlignItems(FlexComponent.Alignment.CENTER);
 
                         add(header, pwField, confirmedButton);
