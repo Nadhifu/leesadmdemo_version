@@ -6,7 +6,7 @@ import com.vaadin.flow.component.dependency.Stylesheets;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@Stylesheet("styles.css")
+@StyleSheet("styles.css")
 @SpringBootApplication
 public class Application implements AppShellConfigurator {
 
