@@ -66,7 +66,7 @@ public class MembersLogin  extends VerticalLayout {
                      
                         
         	               confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
-			        	 confirmedButton.getStyle().set("background-color", "#f5f5f5");
+			        	 confirmedButton.getStyle().set("background-color", "yellow");
                         setAlignItems(FlexComponent.Alignment.CENTER);
 
                         add(header, pwField, confirmedButton);
