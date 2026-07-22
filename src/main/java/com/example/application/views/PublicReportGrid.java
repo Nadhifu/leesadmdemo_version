@@ -42,7 +42,7 @@ public class PublicReportGrid extends VerticalLayout {
  
  LocalDate currentDate = LocalDate.now();
 
- H1 header = new H1("Lee's Active Members");
+ H1 header = new H1("Demo Active Members");
 
 	HorizontalLayout across = new HorizontalLayout();
     
@@ -76,7 +76,7 @@ public class PublicReportGrid extends VerticalLayout {
 	   //     grid.setSortableColumns("fullName");
 	   //     grid.setColumns("membersId", "startDate", "endDate"); 
 	   
-	        Page<MembershipFeesBean> page = membershipFeesBeanService.list(PageRequest.of(0,1500));
+	        Page<MembershipFeesBean> page = membershipFeesBeanService.list(PageRequest.of(0,200));
 	    	 List<MembershipFeesBean> entityList = page.getContent(); //converts page to list object
 	    	 List<MembershipFeesBean> entityList2 = new ArrayList<>(); //hold of filtered results
           
