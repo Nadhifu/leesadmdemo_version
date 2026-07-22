@@ -26,6 +26,11 @@ public class MembersLogin  extends VerticalLayout {
 
             // int [] passwords = {895632, 254783, 378609};
               H1 header = new H1("DEMO 2 Administration Login Page ");
+	          header.getStyle.set("font-size", value: "90px");
+	   
+
+	   
+
             //  boolean authorized = false;
 
              public MembersLogin() {
