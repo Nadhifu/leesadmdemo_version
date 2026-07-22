@@ -50,7 +50,7 @@ public class  GridtobeView extends VerticalLayout {
 	TextField phoneNumberField = new TextField("Phone Number");
 	Long idpassed;
 
-	H1 header = new H1("Lee's Administration Home ");
+	H1 header = new H1("Demo Administration Home ");
 
 
 	private final MembersBeanService membersBeanService;
@@ -304,7 +304,7 @@ public class  GridtobeView extends VerticalLayout {
 	        FooterRow footer = grid.appendFooterRow();
 	        FooterCell countFooterCell = footer.getCell(grid.getColumns().get(0));
 	        
-	        Page<MembersBean> page = membersBeanService.list(PageRequest.of(0,150));
+	        Page<MembersBean> page = membersBeanService.list(PageRequest.of(0,100));
 			 List<MembersBean> entityList = page.getContent();
 			 grid.setItems(entityList);
 			 
