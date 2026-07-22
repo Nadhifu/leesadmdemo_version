@@ -44,6 +44,7 @@ public class MembersLogin  extends VerticalLayout {
                     //    add(header, pwField, confirmedButton);
 
                         Button confirmedButton = new Button("Confirm", e -> {
+							confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 	        	        
 	                      var pwvalue = pwField.getValue();
 							 System.out.println("Password entered: " + pwvalue);
