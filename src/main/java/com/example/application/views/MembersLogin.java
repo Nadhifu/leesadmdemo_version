@@ -38,9 +38,11 @@ public class MembersLogin  extends VerticalLayout {
             //  System.out.println("In the MembersLogin constructor");
         
                         header.getStyle().set("font-size", "50px");
+				        setDefaultHorizontalComponentAlignment(Alignment.CENTER);
+                        setJustifyContentMode(JustifyContentMode.CENTER);
                         pwField.setLabel("PASSWORD");
                         pwField.setValue(""); 
-                        pwField.getStyle().set("--vaadin-input-field-border-width", "3px");
+                        pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
                     //    add(header, pwField, confirmedButton);
 
                         Button confirmedButton = new Button("Confirm", e -> {
