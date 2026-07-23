@@ -8,7 +8,8 @@ import com.vaadin.flow.theme.lumo.Lumo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
-@SpringBootApplication  
+@SpringBootApplication    
+ @StyleSheet("styles.css")
 @StyleSheet(Lumo.STYLESHEET)
 @StyleSheet(Lumo.COMPACT_STYLESHEET)
 //@StyleSheet("styles.css")
