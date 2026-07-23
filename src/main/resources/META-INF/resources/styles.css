@@ -1,0 +1,10 @@
+/* Customizing component styles properties globally */
+html {
+  --vaadin-button-background: lightgray;
+  --vaadin-button-border-color: darkgray;
+}
+
+/* Customizing a component part with a style block */
+vaadin-app-layout::part(navbar) {
+  padding: 0.5em 1em;
+}
