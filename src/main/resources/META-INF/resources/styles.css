@@ -1,7 +1,11 @@
 /* Customizing component styles properties globally */
-html {
+html, body {
+    background-color: #E8DFE3; 
+    margin: 0;
+    height: 100%;
+   --lumo-primary-color: blue;
   --vaadin-button-background: lightgray;
-  --vaadin-button-border-color: darkgray;
+  --vaadin-button-border-color: black;
 }
 
 /* Customizing a component part with a style block */
