@@ -46,9 +46,7 @@ public class MembersLogin  extends VerticalLayout {
                         pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
 
 				        Paragraph paragraph1 = new Paragraph(
-            "This is a static paragraph displayed in Vaadin dedicated to provided 
-						 the demostration of good programming using Java with a 
-						 Vaadin framework."
+            "This is a static paragraph displayed in Vaadin dedicated to provided."
                      );
 				 	     Paragraph paragraph2 = new Paragraph(
             "This is # 2 a static paragraph displayed in Vaadin."
