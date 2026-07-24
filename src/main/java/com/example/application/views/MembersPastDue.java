@@ -168,11 +168,16 @@ public class MembersPastDue extends VerticalLayout {
 		 Button buttonToListingField3 = new Button("Members Active", e -> {
 	           UI.getCurrent().navigate(PublicReportGrid.class);
 	        });
-
+		
+         Button loginreturnButton = new Button("Logout", e -> {
+	        	    	                                                                
+                                 UI.getCurrent().navigate(MembersLogin.class);
+			 });
+		
 		buttonToHome.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 		  
 		  across.add(grid);
-		  across2.add(buttonToHome, buttonToListingField3);
+		  across2.add(buttonToHome, buttonToListingField3, loginreturnButton);
 
 		  across.setWidthFull();
 		
