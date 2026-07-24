@@ -109,9 +109,14 @@ public class PublicReportGrid extends VerticalLayout {
 	    	    UI.getCurrent().navigate(MembersPastDue.class);
 	      
 	        });
+
+		    Button loginreturnButton = new Button("Logout", e -> {
+	        	    	                                                                
+                                 UI.getCurrent().navigate(MembersLogin.class);
+			 });
 	   
 
-			   across.add(buttonToHome, buttonToListingField4);
+			   across.add(buttonToHome, buttonToListingField4, loginreturnButton);
 			
 				add(header, grid, across);
 	    
