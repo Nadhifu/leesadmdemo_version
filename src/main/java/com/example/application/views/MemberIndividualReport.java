@@ -150,11 +150,16 @@ public class MemberIndividualReport extends VerticalLayout implements HasUrlPara
 	           UI.getCurrent().navigate(MembersPastDue.class);
 	        });
 
+		Button loginreturnButton = new Button("Logout", e -> {
+	        	    	                                                                
+                                 UI.getCurrent().navigate(MembersLogin.class);
+			 });
+
 	
         returntohome.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
    
     //  form.setMaxWidth("200px");
-       form.add(firstNameField, lastNameField, id, returntohome, returntoactive, returntoinactive);
+       form.add(firstNameField, lastNameField, id, returntohome, returntoactive, returntoinactive, loginreturnButton);
     
      
        
