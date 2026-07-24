@@ -45,8 +45,15 @@ public class MembersLogin  extends VerticalLayout {
                         pwField.setValue(""); 
                         pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
 
-				     Paragraph paragraph = new Paragraph(
+				     Paragraph paragraph1 = new Paragraph(
             "This is a static paragraph displayed in Vaadin."
+                     );
+				 	     Paragraph paragraph2 = new Paragraph(
+            "This is # 2 a static paragraph displayed in Vaadin."
+                     );
+
+				 	     Paragraph paragraph3 = new Paragraph(
+            "This is #3 a static paragraph displayed in Vaadin."
                      );
                     //    add(header, pwField, confirmedButton);
 
@@ -76,11 +83,19 @@ public class MembersLogin  extends VerticalLayout {
 			        	 confirmedButton.getStyle().set("background-color", "green");
                         setAlignItems(FlexComponent.Alignment.CENTER);
 
-						paragraph.getStyle()
+						paragraph1.getStyle()
                              .set("font-size", "16px")
-                             .set("color", "#333");							   
+                             .set("color", "#333");	
+
+						paragraph2.getStyle()
+                             .set("font-size", "16px")
+                             .set("color", "#233");		
+
+					 	paragraph3.getStyle()
+                             .set("font-size", "16px")
+                             .set("color", "#133");				
  
-                        add(header, pwField, confirmedButton, paragraph);
+                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3);
                             
             }}
 
