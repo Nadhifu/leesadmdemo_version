@@ -15,6 +15,7 @@ import com.vaadin.flow.component.textfield.*;
 //import java.util.Arrays;
 import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.Route;
+import com.vaadin.flow.component.html.Paragraph;
 
 @Route("")
 //@PageTitle("loginpage")
@@ -43,6 +44,10 @@ public class MembersLogin  extends VerticalLayout {
                         pwField.setLabel("    PASSWORD     ");
                         pwField.setValue(""); 
                         pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
+
+				     Paragraph paragraph = new Paragraph(
+            "This is a static paragraph displayed in Vaadin."
+                     );
                     //    add(header, pwField, confirmedButton);
 
                         Button confirmedButton = new Button("Confirm", e -> {
@@ -70,8 +75,12 @@ public class MembersLogin  extends VerticalLayout {
         	               confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 			        	 confirmedButton.getStyle().set("background-color", "green");
                         setAlignItems(FlexComponent.Alignment.CENTER);
+
+						paragraph.getStyle()
+                             .set("font-size", "16px")
+                             .set("color", "#333");							   
  
-                        add(header, pwField, confirmedButton);
+                        add(header, pwField, confirmedButton, paragraph);
                             
             }}
 
