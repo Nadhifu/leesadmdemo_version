@@ -1,8 +1,8 @@
 /* Customizing component styles properties globally */
 html, body {
   /*  background-color: #FCC9D3; */
-   background-color: #EEFCA6; 
-  /*  background-color: #FCC9D3; */
+  /* background-color: #EEFCA6; */
+    background-color: #EDF0D6; 
     margin: 0;
     height: 100%;
    --lumo-primary-color: blue;
