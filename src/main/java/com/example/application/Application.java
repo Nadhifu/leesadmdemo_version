@@ -12,6 +12,10 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
  @StyleSheet("styles.css")
 @StyleSheet(Lumo.STYLESHEET)
 @StyleSheet(Lumo.COMPACT_STYLESHEET)
+ @PWA(name = "My Progressive Web Application",
+     shortName = "MyPWA")
+public class AppShell implements AppShellConfigurator {
+}
 //@StyleSheet("styles.css")
 public class Application implements AppShellConfigurator {
 
