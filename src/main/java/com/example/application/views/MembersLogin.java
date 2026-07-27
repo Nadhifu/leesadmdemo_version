@@ -114,7 +114,7 @@ public class MembersLogin  extends VerticalLayout {
 
 				
  
-                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, ima);
+                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, img);
                             
             }}
 
