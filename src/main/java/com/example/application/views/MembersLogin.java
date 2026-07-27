@@ -47,7 +47,7 @@ public class MembersLogin  extends VerticalLayout {
                         pwField.setLabel("    PASSWORD     ");
                         pwField.setValue(""); 
                         pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
-                        Image image = new Image("/images/clientmessage.jpg", "MJI");
+             //           Image img = new Image("/images/clientmessage.jpg", "MJI");
 				        Paragraph paragraph1 = new Paragraph(
             "This is a static paragraph displayed in Vaadin dedicated to provided."
                      );
@@ -96,11 +96,25 @@ public class MembersLogin  extends VerticalLayout {
 
 					 	paragraph3.getStyle()
                              .set("font-size", "16px")
-                             .set("color", "#133");		
+                             .set("color", "#133");	
+				 Image img = new Image("images/", "Company Logo");
+
+        // Check parameters before adding to UI
+        if (img.getSrc() == null || img.getSrc().isEmpty()) {
+            Notification.show("Image source is missing!");
+        } else {
+            Notification.show("Image source set to: " + img.getSrc());
+        }
+
+        if (img.getAlt() == null || img.getAlt().isEmpty()) {
+            Notification.show("Alt text is missing!");
+        }
+
+        
 
 				
  
-                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, image);
+                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, ima);
                             
             }}
 
