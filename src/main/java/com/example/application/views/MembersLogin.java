@@ -97,7 +97,7 @@ public class MembersLogin  extends VerticalLayout {
                              .set("font-size", "16px")
                              .set("color", "#133");		
 
-				         Image image = new Image("images/clients.jpg", "My JPEG Image");
+				         Image image = new Image("images/demo_message.jpg", "My JPEG Image");
  
                         add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, image);
                             
