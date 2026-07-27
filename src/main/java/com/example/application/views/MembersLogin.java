@@ -17,6 +17,7 @@ import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Image;
+import com.example.components.RealParagraph;
 
 
 @Route("")
