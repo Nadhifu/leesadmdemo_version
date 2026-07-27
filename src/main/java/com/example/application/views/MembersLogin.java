@@ -16,6 +16,8 @@ import com.vaadin.flow.component.textfield.*;
 import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.Route;
 import com.vaadin.flow.component.html.Paragraph;
+import com.vaadin.flow.component.html.Image;
+
 
 @Route("")
 //@PageTitle("loginpage")
@@ -93,9 +95,11 @@ public class MembersLogin  extends VerticalLayout {
 
 					 	paragraph3.getStyle()
                              .set("font-size", "16px")
-                             .set("color", "#133");				
+                             .set("color", "#133");		
+
+				         Image image = new Image("images/clients.jpg", "My JPEG Image");
  
-                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3);
+                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, image);
                             
             }}
 
