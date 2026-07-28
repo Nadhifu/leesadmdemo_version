@@ -56,7 +56,7 @@ public class MembersLogin  extends VerticalLayout {
 
 				 	     Paragraph paragraph3 = new Paragraph(
             "This is #3 a static paragraph displayed in Vaadin." */
-                     );
+              //       );
                     //    add(header, pwField, confirmedButton);
 
                         Button confirmedButton = new Button("Confirm", e -> {
