@@ -15,7 +15,6 @@ import com.vaadin.flow.component.textfield.*;
 //import java.util.Arrays;
 import com.vaadin.flow.router.Menu;
 import com.vaadin.flow.router.Route;
-import com.vaadin.flow.component.html.Paragraph;
 import com.vaadin.flow.component.html.Image;
 
 
@@ -48,7 +47,7 @@ public class MembersLogin  extends VerticalLayout {
                         pwField.setValue(""); 
                         pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
                        Image img = new Image("/clientmessage.jpg", "Express JPEG");
-				        Paragraph paragraph1 = new Paragraph(
+			/**	        Paragraph paragraph1 = new Paragraph(
             "This is a static paragraph displayed in Vaadin dedicated to provided."
                      );
 				 	     Paragraph paragraph2 = new Paragraph(
@@ -56,7 +55,7 @@ public class MembersLogin  extends VerticalLayout {
                      );
 
 				 	     Paragraph paragraph3 = new Paragraph(
-            "This is #3 a static paragraph displayed in Vaadin."
+            "This is #3 a static paragraph displayed in Vaadin." */
                      );
                     //    add(header, pwField, confirmedButton);
 
@@ -86,7 +85,7 @@ public class MembersLogin  extends VerticalLayout {
 			        	 confirmedButton.getStyle().set("background-color", "green");
                         setAlignItems(FlexComponent.Alignment.CENTER);
 
-						paragraph1.getStyle()
+				/**		paragraph1.getStyle()
                              .set("font-size", "16px")
                              .set("color", "#333");	
 
@@ -96,7 +95,7 @@ public class MembersLogin  extends VerticalLayout {
 
 					 	paragraph3.getStyle()
                              .set("font-size", "16px")
-                             .set("color", "#133");	
+                             .set("color", "#133");	 */
 			
 
         // Check parameters before adding to UI
@@ -114,7 +113,7 @@ public class MembersLogin  extends VerticalLayout {
 
 				
  
-                        add(header, pwField, confirmedButton, paragraph1, paragraph2, paragraph3, img);
+                        add(header, pwField, confirmedButton, img);
                             
             }}
 
