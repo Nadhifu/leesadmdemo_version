@@ -47,7 +47,7 @@ public class MembersLogin  extends VerticalLayout {
                         pwField.setLabel("    PASSWORD     ");
                         pwField.setValue(""); 
                         pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
-                       Image img = new Image("images/clientmessage.jpg", "Express JPEG");
+                       Image img = new Image("/clientmessage.jpg", "Express JPEG");
 				        Paragraph paragraph1 = new Paragraph(
             "This is a static paragraph displayed in Vaadin dedicated to provided."
                      );
