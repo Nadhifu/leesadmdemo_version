@@ -7,14 +7,15 @@ import com.vaadin.flow.theme.lumo.Lumo;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import com.vaadin.flow.server.PWA;
+
 
 @SpringBootApplication    
  @StyleSheet("styles.css")
 @StyleSheet(Lumo.STYLESHEET)
 @StyleSheet(Lumo.COMPACT_STYLESHEET)
-// @PWA(name = "My Progressive Web Application",
- //    shortName = "MyPWA")
-//@StyleSheet("styles.css")
+ @PWA(name = "My Progressive Web Application",
+     shortName = "MyPWA")
 public class Application implements AppShellConfigurator {
 
     public static void main(String[] args) {
