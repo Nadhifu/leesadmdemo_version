@@ -65,7 +65,7 @@ public class MembersLogin  extends VerticalLayout {
 	                      var pwvalue = pwField.getValue();
 							 System.out.println("Password entered: " + pwvalue);
 
-             /*       if (pwvalue != null && pwvalue.length() > 0) {
+                  if (pwvalue != null && pwvalue.length() > 0) {
                           if (pwvalue.equals("mylife") || pwvalue.equals("urlife") || pwvalue.equals("thelife")) {
                              UI.getCurrent().navigate(GridtobeView.class);
                           } else {
@@ -80,7 +80,7 @@ public class MembersLogin  extends VerticalLayout {
               });
  
                      
-                       */ 
+                    
         	               confirmedButton.addThemeVariants(ButtonVariant.LUMO_PRIMARY);
 			        	 confirmedButton.getStyle().set("background-color", "green");
                         setAlignItems(FlexComponent.Alignment.CENTER);
@@ -115,6 +115,6 @@ public class MembersLogin  extends VerticalLayout {
  
                         add(header, pwField, confirmedButton, img);
                             
-            }}
+            }};
 
 
