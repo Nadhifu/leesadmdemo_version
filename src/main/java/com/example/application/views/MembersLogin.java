@@ -28,7 +28,7 @@ public class MembersLogin  extends VerticalLayout {
              Button confirmedButton = new Button();
 
             // int [] passwords = {895632, 254783, 378609};
-              H1 header = new H1("DEMO Administration Login Page ");
+              H1 header = new H1("Demo Administration Login Page ");
 	                                                                                          
 	
 	   //testt
