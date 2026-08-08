@@ -68,6 +68,7 @@ public class MembersLogin  extends VerticalLayout {
                           if (pwvalue.equals("mylife") || pwvalue.equals("123") || pwvalue.equals("thelife")) {
                              UI.getCurrent().navigate(GridtobeView.class);
                           } else {
+							  System.out.println("Password entered failed: " + pwvalue);
                                  Notification notification = Notification.show("Not Authorized User");
                                  notification.addThemeVariants(NotificationVariant.LUMO_ERROR);
                                 }
