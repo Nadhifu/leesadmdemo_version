@@ -65,7 +65,7 @@ public class MembersLogin  extends VerticalLayout {
 							 System.out.println("Password entered: " + pwvalue);
 
                   if (pwvalue != null && pwvalue.length() > 0) {
-                          if (pwvalue.equals("mylife") || pwvalue.equals("urlife") || pwvalue.equals("thelife")) {
+                          if (pwvalue.equals("mylife") || pwvalue.equals("123") || pwvalue.equals("thelife")) {
                              UI.getCurrent().navigate(GridtobeView.class);
                           } else {
                                  Notification notification = Notification.show("Not Authorized User");
