@@ -22,7 +22,9 @@ public class MemberForm extends VerticalLayout implements HasUrlParameter<String
 	 
    
 	private static final long serialVersionUID = 1L;
+	
 	EmailField emailField = new EmailField("Email");
+	TextField idField = new TextField("ID");
 	TextField firstNameField = new TextField("First Name");
 	TextField lastNameField = new TextField( "Last Name");
 	TextField phoneNumberField = new TextField("Phone");
@@ -78,6 +80,8 @@ public class MemberForm extends VerticalLayout implements HasUrlParameter<String
        indexcnt = items.length;
        if (indexcnt > 4 ) {	    	   
     	   wsid = items[4];	  
+		   idField.setValue(wsid);
+		   idField.setReadOnly(true);
        }
     	
     
@@ -184,7 +188,7 @@ public class MemberForm extends VerticalLayout implements HasUrlParameter<String
 
 	  form.getStyle().set("--vaadin-input-field-border-width", "3px");
 	  
-        form.add(firstNameField, lastNameField, emailField,
+        form.add(idField,firstNameField, lastNameField, emailField,
 			phoneNumberField, saveButtonField, cancelButtonField);
 	
 		add(header, form);
