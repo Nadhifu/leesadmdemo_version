@@ -29,7 +29,7 @@ public class MemberForm extends VerticalLayout implements HasUrlParameter<String
 	TextField lastNameField = new TextField( "Last Name");
 	TextField phoneNumberField = new TextField("Phone");
 	 int indexcnt = 0;
-	 H1 header = new H1("Lee's Membership Enrollment ");
+	 H1 header = new H1("Lee's Membership Enrollment/Update ");
     FormLayout form = new FormLayout();
 
 	Button saveButtonField = new Button("Confirm New Member/Update Existing Member");
