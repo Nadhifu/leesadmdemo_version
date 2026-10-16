@@ -124,11 +124,14 @@ public class MemberForm extends VerticalLayout implements HasUrlParameter<String
 		
 		binder.forField(firstNameField)
 			.withValidator(
-        firstname -> firstname.length() > 0 & firstname.length() < 16,
-        "Name must be less than 16 characters")
+        firstname -> firstname.length() > 0 && firstname.length() < 16,
+        "FirstName must be less than 16 characters")
         .bind("firstName");
 		
 		binder.forField(lastNameField)
+				.withValidator(
+        lastname -> lastname.length() > 0 && lastname.length() < 16,
+        "LastName must be less than 16 characters")
         .bind("lastName");
 	//	binder.forField(phoneNumberField)
     //    .bind("phoneNumber");
