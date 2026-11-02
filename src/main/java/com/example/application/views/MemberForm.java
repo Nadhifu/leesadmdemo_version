@@ -87,8 +87,8 @@ public class MemberForm extends VerticalLayout implements HasUrlParameter<String
     
        
        phoneNumberField.setValue(items[0]);
-    //   phoneNumberField.setReadOnly(true);
-       phoneNumberField.setReadOnly(false);
+       phoneNumberField.setReadOnly(true);
+    //   phoneNumberField.setReadOnly(false);
      
        firstNameField.addClassName("colored4-grid");
        firstNameField.setValue(items[1]);
