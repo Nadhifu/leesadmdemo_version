@@ -48,7 +48,7 @@ public class  GridtobeView extends VerticalLayout {
 	TextField firstNameField = new TextField("First Name");
 	TextField lastNameField = new TextField("Last Name");
 	TextField phoneNumberField = new TextField("Phone Number");
-	phoneNumberField.setMaxLength(10); // Prevents typing more than 10 character
+	
 
 	Long idpassed;
 
@@ -106,6 +106,8 @@ public class  GridtobeView extends VerticalLayout {
         //	var value3 = lastNameField.getValue();
         //	var value4 = emailField.getValue(); 
 	        //	System.out.println("phonefield length is "
+
+		phoneNumberField.setMaxLength(10); // Prevents typing more than 10 character
         	
 	        Button buttonAddField2 = new Button("Membership Payment", e -> {
 	        	var value = phoneNumberField.getValue();
