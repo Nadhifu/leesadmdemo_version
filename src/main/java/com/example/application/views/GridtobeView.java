@@ -108,6 +108,7 @@ public class  GridtobeView extends VerticalLayout {
 	        //	System.out.println("phonefield length is "
 
 		phoneNumberField.setMaxLength(10); // Prevents typing more than 10 character
+		phoneNumberField.setHelperText("Exactly 10 digits");
         	
 	        Button buttonAddField2 = new Button("Membership Payment", e -> {
 	        	var value = phoneNumberField.getValue();
