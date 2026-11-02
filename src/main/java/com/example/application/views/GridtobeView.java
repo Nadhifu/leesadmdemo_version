@@ -48,6 +48,7 @@ public class  GridtobeView extends VerticalLayout {
 	TextField firstNameField = new TextField("First Name");
 	TextField lastNameField = new TextField("Last Name");
 	TextField phoneNumberField = new TextField("Phone Number");
+	phoneNumberField.maxlength(10);
 	Long idpassed;
 
 	H1 header = new H1("Demo Administration Home ");
