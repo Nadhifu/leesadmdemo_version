@@ -3,6 +3,7 @@ package com.example.application;
 import com.vaadin.flow.component.page.AppShellConfigurator;
 
 import com.vaadin.flow.component.dependency.StyleSheet; 
+import com.vaadin.flow.component.page.ColorScheme;
 import com.vaadin.flow.theme.lumo.Lumo;
 
 import org.springframework.boot.SpringApplication;
@@ -10,10 +11,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import com.vaadin.flow.server.PWA;
 
 
-@SpringBootApplication    
- @StyleSheet("styles.css")
-@StyleSheet(Lumo.STYLESHEET)
-@StyleSheet(Lumo.COMPACT_STYLESHEET)
+@SpringBootApplication  
+ @ColorScheme(ColorScheme.Value.DARK)
+// @StyleSheet("styles.css")
+//@StyleSheet(Lumo.STYLESHEET)
+//@StyleSheet(Lumo.COMPACT_STYLESHEET)
  @PWA(name = "My Progressive Web Application",
      shortName = "MyPWA")
 public class Application implements AppShellConfigurator {
