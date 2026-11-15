@@ -13,8 +13,8 @@ import com.vaadin.flow.server.PWA;
 
 @SpringBootApplication  
 // @ColorScheme(ColorScheme.Value.DARK)
-  @ColorScheme(ColorScheme.Value.LIGHT)
-// @StyleSheet("styles.css")
+//  @ColorScheme(ColorScheme.Value.LIGHT)
+ @StyleSheet("styles.css")
 //@StyleSheet(Lumo.STYLESHEET)
 //@StyleSheet(Lumo.COMPACT_STYLESHEET)
  @PWA(name = "My Progressive Web Application",
