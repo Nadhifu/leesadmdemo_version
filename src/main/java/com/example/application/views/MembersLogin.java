@@ -42,9 +42,17 @@ public class MembersLogin  extends VerticalLayout {
                         header.getStyle().set("font-size", "50px");
 				        setDefaultHorizontalComponentAlignment(Alignment.CENTER);
                         setJustifyContentMode(JustifyContentMode.CENTER);
-                        pwField.setLabel("    PASSWORD     ");
-                        pwField.setValue(""); 
-                        pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
+				 TextField pwfield = new TextField();
+pwfield.setLabel("PASSWORD");
+// Optional: add theme variant for text alignment inside field
+pwfield.addThemeVariants(TextFieldVariant.ALIGN_CENTER);
+
+// Add CSS to center the label text
+//field.getElement().getStyle().set("text-align", "center", true);
+
+                 //       pwField.setLabel("    PASSWORD     ");
+                 //       pwField.setValue(""); 
+                  //      pwField.getStyle().set("--vaadin-input-field-border-width", "5px");
                        Image img = new Image("/clientmessage.png", "Express PNG");
 			/**	        Paragraph paragraph1 = new Paragraph(
             "This is a static paragraph displayed in Vaadin dedicated to provided."
