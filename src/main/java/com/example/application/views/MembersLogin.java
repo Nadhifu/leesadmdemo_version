@@ -45,7 +45,7 @@ public class MembersLogin  extends VerticalLayout {
 				 TextField pwfield = new TextField();
 pwfield.setLabel("PASSWORD");
 // Optional: add theme variant for text alignment inside field
-pwfield.addThemeVariants(TextFieldVariant.ALIGN_CENTER);
+//pwfield.addThemeVariants(TextFieldVariant.ALIGN_CENTER);
 
 // Add CSS to center the label text
 //field.getElement().getStyle().set("text-align", "center", true);
