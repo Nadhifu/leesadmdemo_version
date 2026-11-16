@@ -44,6 +44,8 @@ public class MembersLogin  extends VerticalLayout {
                         setJustifyContentMode(JustifyContentMode.CENTER);
 			//	 TextField pwfield = new TextField();
                  pwField.setLabel("PASSWORD");
+				 pwfield.addThemeVariants(TextFieldVariant.SMALL,
+        TextFieldVariant.ALIGN_CENTER, TextFieldVariant.HELPER_ABOVE);
 // Optional: add theme variant for text alignment inside field
 //pwfield.addThemeVariants(TextFieldVariant.ALIGN_CENTER);
 
