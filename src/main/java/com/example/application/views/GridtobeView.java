@@ -311,7 +311,7 @@ public class  GridtobeView extends VerticalLayout {
 	        FooterRow footer = grid.appendFooterRow();
 	        FooterCell countFooterCell = footer.getCell(grid.getColumns().get(0));
 	        
-	        Page<MembersBean> page = membersBeanService.list(PageRequest.of(0,100));
+	        Page<MembersBean> page = membersBeanService.list(PageRequest.of(0,200));
 			 List<MembersBean> entityList = page.getContent();
 			 grid.setItems(entityList);
 			 
