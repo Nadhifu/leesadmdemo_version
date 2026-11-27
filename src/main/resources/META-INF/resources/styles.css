@@ -1,16 +1,14 @@
-/* Customizing component styles properties globally */
-html, body {
-  /*  background-color: #FCC9D3; */
-  /* background-color: #EEFCA6; */
-    background-color: #EDF0D6; 
-    margin: 0;
-    height: 100%;
-   --lumo-primary-color: blue;
-  --vaadin-button-background: lightgray;
-  --vaadin-button-border-color: black;
+html {
+   background-color: maroon;
 }
-
-/* Customizing a component part with a style block */
-vaadin-app-layout::part(navbar) {
-  padding: 0.5em 1em;
+body {
+   background-color: turquoise;
+}
+h1 {
+   color: green;
+   text-align: center;
+}
+p {
+   font-family: yellow;
+   font-size: 20px;
 }
