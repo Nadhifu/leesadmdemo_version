@@ -39,7 +39,6 @@ public class  GridtobeView extends VerticalLayout {
     private static final long serialVersionUID = 1L;
     
     Grid<MembersBean> grid = new Grid<>(MembersBean.class);
-	grid.addClassName("table");
     private final Binder<MembersBean> binder = new Binder<>(MembersBean.class);
     
     HorizontalLayout form = new HorizontalLayout();
@@ -298,6 +297,7 @@ public class  GridtobeView extends VerticalLayout {
 	 	   grid.addThemeVariants(GridVariant.LUMO_COLUMN_BORDERS);
 	        grid.addThemeVariants(GridVariant.LUMO_ROW_STRIPES);
 	    	 grid.addThemeVariants(GridVariant.LUMO_COMPACT);
+	    	grid.addClassName("table");
 			
 
 	         //   grid.addClassName("small-font-grid");
