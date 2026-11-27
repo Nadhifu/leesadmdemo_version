@@ -39,6 +39,7 @@ public class  GridtobeView extends VerticalLayout {
     private static final long serialVersionUID = 1L;
     
     Grid<MembersBean> grid = new Grid<>(MembersBean.class);
+	grid.addClassName("table");
     private final Binder<MembersBean> binder = new Binder<>(MembersBean.class);
     
     HorizontalLayout form = new HorizontalLayout();
